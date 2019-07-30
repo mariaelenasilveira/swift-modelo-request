@@ -12,6 +12,8 @@
 		AB6493F922F0D67900A81620 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB6493F722F0D67900A81620 /* Main.storyboard */; };
 		AB6493FB22F0D67B00A81620 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB6493FA22F0D67B00A81620 /* Assets.xcassets */; };
 		AB6493FE22F0D67B00A81620 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB6493FC22F0D67B00A81620 /* LaunchScreen.storyboard */; };
+		AB64940F22F0DB1100A81620 /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB64940E22F0DB1100A81620 /* EndPointType.swift */; };
+		AB64941122F0DFC300A81620 /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB64941022F0DFC300A81620 /* URLParameterEncoder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		AB6493FA22F0D67B00A81620 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB6493FD22F0D67B00A81620 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB6493FF22F0D67B00A81620 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB64940E22F0DB1100A81620 /* EndPointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
+		AB64941022F0DFC300A81620 /* URLParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLParameterEncoder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,10 @@
 		AB6493F222F0D67900A81620 /* Modelo Request */ = {
 			isa = PBXGroup;
 			children = (
+				AB64940522F0D9EE00A81620 /* Application */,
+				AB64940822F0DA2B00A81620 /* Model */,
+				AB64940722F0DA2100A81620 /* ViewController */,
+				AB64940622F0D9FF00A81620 /* Networking */,
 				AB6493F322F0D67900A81620 /* AppDelegate.swift */,
 				AB6493F522F0D67900A81620 /* ViewController.swift */,
 				AB6493F722F0D67900A81620 /* Main.storyboard */,
@@ -62,6 +70,68 @@
 				AB6493FF22F0D67B00A81620 /* Info.plist */,
 			);
 			path = "Modelo Request";
+			sourceTree = "<group>";
+		};
+		AB64940522F0D9EE00A81620 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		AB64940622F0D9FF00A81620 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				AB64940D22F0DA6D00A81620 /* EndPoint */,
+				AB64940C22F0DA6500A81620 /* Manager */,
+				AB64940B22F0DA5C00A81620 /* Service */,
+				AB64940A22F0DA5200A81620 /* Encoding */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		AB64940722F0DA2100A81620 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		AB64940822F0DA2B00A81620 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AB64940A22F0DA5200A81620 /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				AB64941022F0DFC300A81620 /* URLParameterEncoder.swift */,
+			);
+			path = Encoding;
+			sourceTree = "<group>";
+		};
+		AB64940B22F0DA5C00A81620 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		AB64940C22F0DA6500A81620 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		AB64940D22F0DA6D00A81620 /* EndPoint */ = {
+			isa = PBXGroup;
+			children = (
+				AB64940E22F0DB1100A81620 /* EndPointType.swift */,
+			);
+			path = EndPoint;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +205,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB64941122F0DFC300A81620 /* URLParameterEncoder.swift in Sources */,
 				AB6493F622F0D67900A81620 /* ViewController.swift in Sources */,
 				AB6493F422F0D67900A81620 /* AppDelegate.swift in Sources */,
+				AB64940F22F0DB1100A81620 /* EndPointType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
