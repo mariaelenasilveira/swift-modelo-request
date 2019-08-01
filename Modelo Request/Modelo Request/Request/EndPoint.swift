@@ -2,7 +2,7 @@
 //  EndPoint.swift
 //  Modelo Request
 //
-//  Created by Mariaelena Nascimento Silveira on 31/07/19.
+//  Created by Mariaelena Nascimento Silveira on 01/08/19.
 //  Copyright © 2019 Mariaelena Nascimento Silveira. All rights reserved.
 //
 
@@ -35,5 +35,4 @@ extension EndPoint {
         guard let url = urlComponents.url else { return nil }
         return URLRequest(url: url)
     }
-    
 }
